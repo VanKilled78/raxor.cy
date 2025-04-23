@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree Hacker Theme</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #00FF00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Background Animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00, 0 0 20px #00FF00; }
+            50% { text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00; }
+            100% { text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00, 0 0 20px #00FF00; }
+        }
+
+        /* Container Styling */
+        .container {
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.6);
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        /* Logo Styling */
+        .logo {
+            margin-bottom: 30px;
+            transition: transform 0.5s ease;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .logo img:hover {
+            transform: rotate(360deg) scale(1.1);
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #00FF00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: block;
+            margin: 20px 0;
+            padding: 16px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #000;
+            background-color: #00FF00;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            transition: all 0.4s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05) translateY(-4px);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #00FF00;
+            font-style: italic;
+        }
+
+        /* Neon Effect on Hover */
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo bagian atas -->
+        <div class="logo">
+            <a href="https://www.yourwebsite.com" target="_blank">
+                <img src="https://i.top4top.io/p_3400uco8a0.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Title -->
+        <h1>@raxor.cy</h1>
+
+        <!-- Button Links -->
+        <a href="https://wa.me/6281374383083" class="btn" target="_blank">MY WHATSAPP CONTACT</a>
+        <a href="https://chat.whatsapp.com/EdVejOSrDjd2ZCFefg0Spv" class="btn" target="_blank">JOIN MY WHATSAPP GROUP</a>
+        <a href="https://youtube.com/@mr_raxor" class="btn" target="_blank">SUBSCRIBE MY YOUTUBE CHANNEL </a>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>©raxor.cy</p>
+        </div>
+    </div>
+
+</body>
+</html>
